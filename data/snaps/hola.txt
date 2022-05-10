@@ -1,2 +1,0 @@
-voy crear un archivo de teto con algo de info par que la carpeta no esté vacía y se suba con un git push
-
