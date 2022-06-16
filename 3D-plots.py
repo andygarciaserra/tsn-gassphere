@@ -26,6 +26,7 @@ savedir = 'output/'
 
 files = os.listdir(datadir+".")
 files.sort()
+
 for i,file in enumerate(files):    #Importing data (PartType0 - Gas, PartType1 - DM, PartType2 - baryons)
     f = h5py.File(datadir+file, "r")
     group = f["PartType0"]
@@ -60,8 +61,6 @@ for i,file in enumerate(files):    #Importing data (PartType0 - Gas, PartType1 -
     
     plt.savefig(savedir+str(i)+".png", bbox_inches = 'tight')
     #plt.show()
-
-
 
 #ANIMATION:
 im1 = Image.open(savedir+'0.png')
